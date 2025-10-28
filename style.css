@@ -1,0 +1,50 @@
+body  {
+    background: url(./space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#astronaut {
+    height: 250px;
+    animation-name: astronaut;
+    animation-duration: 4s;
+    position: relative;
+    transform: rotate(3odeg);
+}
+
+@keyframes astronaut {
+    from {
+        top: 0;
+        left: 0;
+        transform: rotate(30deg);
+    }
+    to {
+        top: 300px;
+        left: 1000px;
+        transform: rotate(390deg);
+    }
+}
+
+#rocket {
+    height: 300px;
+    animation-name: rocket;
+    animation-duration: 4s;
+    position: relative;
+    transform: rotate(80deg);
+    top: 400px;
+}
+
+@keyframes rocket {
+from {
+    top: 500px;
+    left: 0px;
+    transform: rotate(0);
+}
+to {
+    height: 50px;
+    top: 0px;
+    left: 900px;
+    transform: rotate(50deg);
+}
+}
